@@ -1,16 +1,16 @@
-CKEDITOR.plugins.add('button-link', {
+CKEDITOR.plugins.add('z-preview', {
     requires: 'widget',
-    icons: 'button-link',
-    commandName: 'button-link-init',
-    label: 'Button Link',
+    icons: 'z-preview',
+    commandName: 'z-preview-init',
+    label: 'Z Preview',
     init: function(editor) {
         // editor.addContentsCss(this.path + 'styles/backend.css');
-        editor.widgets.add('button-link-init', {
+        editor.widgets.add('z-preview-init', {
             template: '<a class="btn-link"></a>',
             upcast: function(element) {
                 return element.name == 'a' && element.hasClass('btn-link');
             },
-            dialog: 'button-link-dialog',
+            dialog: 'z-preview-dialog',
             init: function() {
                 // initialize widget data object
                 this.setData('bg_color', this.element.getStyle('background-color'));
@@ -33,6 +33,6 @@ CKEDITOR.plugins.add('button-link', {
         });
 
         // add the dialog file to the widget
-        CKEDITOR.dialog.add('button-link-dialog', this.path + 'dialogs/dialog.js');
+        CKEDITOR.dialog.add('z-preview-dialog', this.path + 'dialogs/dialog.js');
     }
 });
