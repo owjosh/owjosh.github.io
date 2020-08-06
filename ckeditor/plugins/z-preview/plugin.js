@@ -6,7 +6,7 @@ CKEDITOR.plugins.add('z-preview', {
     init: function(editor) {
         // editor.addContentsCss(this.path + 'styles/backend.css');
         editor.widgets.add('z-preview-init', {
-            template: '<a class="btn-link"></a>',
+            template: 'hello',
             upcast: function(element) {
                 return element.name == 'a' && element.hasClass('btn-link');
             },
@@ -17,7 +17,7 @@ CKEDITOR.plugins.add('z-preview', {
             },
             data: function() {
                 // update widget with new data from dialog
-                this.element.setStyle('background-color', this.data.bg_color);
+                this.element.innerHTML(this.data.bg_color);
             }
         });
 
