@@ -13,11 +13,11 @@ CKEDITOR.plugins.add('z-preview', {
             dialog: 'z-preview-dialog',
             init: function() {
                 // initialize widget data object
-                this.setData('bg_color', this.element.getStyle('background-color'));
+                this.setData('link_text', this.element.getText());
             },
             data: function() {
                 // update widget with new data from dialog
-                this.element.innerHTML(this.data.bg_color);
+                this.element.setText(this.data.link_text);
             }
         });
 

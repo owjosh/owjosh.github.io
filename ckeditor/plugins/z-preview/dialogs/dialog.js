@@ -7,14 +7,14 @@ CKEDITOR.dialog.add('z-preview-dialog', function(editor) {
             id: 'z-preview-config',
             elements: [{
                 setup: function(widget) {
-                    this.setValue(widget.data.bg_color);
+                    this.setValue(widget.data.link_text);
                 },
                 commit: function(widget) {
-                    widget.setData('bg_color', this.getValue());
+                    widget.setData('link_text', this.getValue());
                 },
                 type: 'text',
-                id: 'bg_color',
-                label: 'Background color (HEX, RGB, RGBA) or leave blank for default'
+                id: 'link_text',
+                label: 'Link text to display on page'
             }]
         }]
     };
