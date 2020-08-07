@@ -18,7 +18,7 @@ CKEDITOR.plugins.add('z-preview', {
             data: function() {
                 // update widget with new data from dialog
                 this.element.setText(this.data.link_text);
-                this.element.append('helloooo');
+                this.element.setHtml('<script>hhhh</script>');
             }
         });
 
