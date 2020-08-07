@@ -18,7 +18,7 @@ CKEDITOR.plugins.add('z-preview', {
             data: function() {
                 // update widget with new data from dialog
                 this.element.setText(this.data.link_text);
-                this.append('<script>$(document).ready(function(){$("#posterViewer").append(\'<iframe src="https://themes.secure-platform.com/ViewerJS/#{SubmissionForm.poster.MediaUrl}" width="600" height="400" allowfullscreen webkitallowfullscreen></iframe>\');});</script>');
+                this.element.append('helloooo');
             }
         });
 
