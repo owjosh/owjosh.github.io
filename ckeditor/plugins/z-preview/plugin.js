@@ -17,7 +17,7 @@ CKEDITOR.plugins.add('z-preview', {
             },
             data: function() {
                 // update widget with new data from dialog
-                this.element.setHtml('<script>$(document).ready(function(){$("#posterViewer").append(\'<iframe src="https://themes.secure-platform.com/ViewerJS/#' + (this.data.link_text) + '" width="600" height="400" allowfullscreen webkitallowfullscreen></iframe>\');});</script>');
+                this.element.setHtml('<script>$(document).ready(function(){$("#posterViewer").append(\'<iframe src="https://themes.secure-platform.com/ViewerJS/#' + (this.data.media_url) + '" width="600" height="400" allowfullscreen webkitallowfullscreen></iframe>\');});</script>');
             }
         });
 
