@@ -7,14 +7,14 @@ CKEDITOR.dialog.add('z-preview-dialog', function(editor) {
             id: 'z-preview-config',
             elements: [{
                 setup: function(widget) {
-                    this.setValue(widget.data.link_text);
+                    this.setValue(widget.data.media_url);
                 },
                 commit: function(widget) {
-                    widget.setData('link_text', this.getValue());
+                    widget.setData('media_url', this.getValue());
                 },
                 type: 'text',
-                id: 'link_text',
-                label: 'Link text to display on page'
+                id: 'media_url',
+                label: '.MediaUrl variable to preview'
             }]
         }]
     };

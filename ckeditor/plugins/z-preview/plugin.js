@@ -13,7 +13,7 @@ CKEDITOR.plugins.add('z-preview', {
             dialog: 'z-preview-dialog',
             init: function() {
                 // initialize widget data object
-                this.setData('link_text', this.element.getText());
+                this.setData('media_url', this.element.getText());
             },
             data: function() {
                 // update widget with new data from dialog
