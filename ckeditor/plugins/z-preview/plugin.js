@@ -6,9 +6,9 @@ CKEDITOR.plugins.add('z-preview', {
     init: function(editor) {
         // editor.addContentsCss(this.path + 'styles/backend.css');
         editor.widgets.add('z-preview-init', {
-            template: '<a class="btn-link"></a>',
+            template: '<div id="posterViewer"></div><script>$(document).ready(function(){$("#posterViewer").append(\'<iframe src="https://themes.secure-platform.com/ViewerJS/#{SubmissionForm.poster.MediaUrl}" width="600" height="400" allowfullscreen webkitallowfullscreen></iframe>\');});</script>',
             upcast: function(element) {
-                return element.name == 'a' && element.hasClass('btn-link');
+                return element.name == 'a' && element.hasID('posterViewer');
             },
             dialog: 'z-preview-dialog',
             init: function() {
