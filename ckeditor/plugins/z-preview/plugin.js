@@ -6,7 +6,7 @@ CKEDITOR.plugins.add('z-preview', {
     init: function(editor) {
         // editor.addContentsCss(this.path + 'styles/backend.css');
         editor.widgets.add('z-preview-init', {
-            template: 'hello',
+            template: '<a class="btn-link"></a>',
             upcast: function(element) {
                 return element.name == 'a' && element.hasClass('btn-link');
             },

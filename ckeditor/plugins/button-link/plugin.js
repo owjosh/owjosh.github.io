@@ -4,7 +4,7 @@ CKEDITOR.plugins.add('button-link', {
     commandName: 'button-link-init',
     label: 'Button Link',
     init: function(editor) {
-        // editor.addContentsCss(this.path + 'styles/backend.css');
+        editor.addContentsCss(this.path + 'styles/backend.css');
         editor.widgets.add('button-link-init', {
             template: '<a class="btn-link"></a>',
             upcast: function(element) {
