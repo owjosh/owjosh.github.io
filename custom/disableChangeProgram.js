@@ -7,7 +7,7 @@ $.get('/a/organizations/main/solicitations/selectcurrentsolicitation', function(
             Backbone.post('/a/organizations/main/solicitations/selectcurrentsolicitation', {
                     solicitationId: ''
                 }, { dontShowSuccessAlert: !0 }, )
-                .done(function(e) {
+                .done(function() {
                     window.location.assign(window.location.href)
                 })
         }
