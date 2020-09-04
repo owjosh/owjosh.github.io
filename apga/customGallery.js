@@ -14,8 +14,8 @@ if (window.location.toString().includes("roundId=2&")) {
     $("#gallery_back").show();
 }
 
-if ($(".gallery_col .clearfix").length) {
-    console.log("no results");
+if (($(".gallery_col").length)) {
+    $("#no_results").show();
 }
 
 $("#containerContent div").hide(); // Initially hide all content
