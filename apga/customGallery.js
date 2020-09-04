@@ -14,7 +14,7 @@ if (window.location.toString().includes("roundId=2&")) {
     $("#gallery_back").show();
 }
 
-if (($(".gallery_col").length)) {
+if (($(".gallery_col").length) == 0) {
     $("#no_results").show();
 }
 

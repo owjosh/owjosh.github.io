@@ -1,4 +1,5 @@
-ul.scheduleDayList {
+ul.scheduleDayList,
+.breadcrumb {
     display: none;
 }
 
