@@ -8,13 +8,11 @@ function hideAllSessions() {
     $("#containerContent").show();
 };
 
+$("#no_results").hide();
 $(document).ready(function() {
     if ($(".gallery_col").length == 0) {
         $("#no_results").show();
-    } else {
-        $("#no_results").hide();
-    };
-
+    }
     if (window.location.toString().includes("roundId=2&")) {
         $("#tabs, #containerContent, div.applicationGallery_info > p:nth-child(4), div.applicationGallery_info > hr").hide();
         $("#gallery_back").show();
