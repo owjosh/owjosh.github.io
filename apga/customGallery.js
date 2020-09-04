@@ -10,7 +10,7 @@ function hideAllSessions() {
 
 $(document).ready(function() {
     if ($(".gallery_col").length != 0) {
-        $("#no_results").hide();
+        $("#no_results").show();
     };
 
     if (window.location.toString().includes("roundId=2&")) {
