@@ -10,10 +10,7 @@ function hideAllSessions() {
 
 
 if (window.location.toString().includes("roundId=2&")) {
-    $("#tabs, ").hide();
-    $("#containerContent").hide();
-    $("div.applicationGallery_info > p:nth-child(4)").hide();
-    $("div.applicationGallery_info > hr").hide();
+    $("#tabs, #containerContent, div.applicationGallery_info > p:nth-child(4), div.applicationGallery_info > hr").hide();
     $("#gallery_back").show();
 }
 
