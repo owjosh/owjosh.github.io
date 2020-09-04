@@ -16,7 +16,7 @@ if (window.location.toString().includes("roundId=2&")) {
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
-$('#tabs #newNav a').click(function(e) {
+$('#tabs a').click(function(e) {
     e.preventDefault();
     showAllSessions();
     $("#containerContent div").hide(); //Hide all content
