@@ -55,6 +55,7 @@ ul.scheduleDayList {
 #tabs #current a,
 #tabs #current a::after {
     background: #fff;
+    color: #004685;
     z-index: 3;
 }
 
