@@ -15,7 +15,7 @@ if (window.location.toString().includes("roundId=2&")) {
 }
 
 if ($(".gallery_col").length == 0) {
-    $("#no_results").show();
+    $("#no_results").attr("style", "display: inline !important");
 };
 
 $("#containerContent div").hide(); // Initially hide all content
