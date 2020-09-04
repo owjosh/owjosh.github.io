@@ -1,16 +1,26 @@
 function showAllSessions() {
     $('h3 > a').closest('div.results_list > div').show()
+    $("#containerContent").css("padding", "2em");
 }
 
 function hideAllSessions() {
     $('h3 > a').closest('div.results_list > div').hide();
+    $("#containerContent").show();
+};
+
+// if (window.location.toString().includes("dayId=6")) {
+//     $("#tabs li:nth-child(2)").attr("id", "current");
+//     $('#tab2').fadeIn();
+// } else {
+//     $("#tabs li:first").attr("id", "current"); // Activate first tab
+// }
+
+
+if (window.location.toString().includes("roundId=2&")) {
+    $("#newNav").hide();
+    $("#gallery_back").show();
 }
-if (window.location.toString().includes("dayId=6")) {
-    $("#tabs li:nth-child(2)").attr("id", "current");
-    $('#tab2').fadeIn();
-} else {
-    $("#tabs li:first").attr("id", "current"); // Activate first tab
-}
+
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
 $('#tabs a').click(function(e) {
@@ -36,6 +46,11 @@ $('#tabs a').click(function(e) {
     if ($(this).attr("title") == ("tab5")) {
         hideAllSessions();
         $("p:nth-child(3) strong:contains('Operations & Engineering'), strong:contains('Transmission Pipelines'), strong:contains('Safety & Compliance'), strong:contains('Bonus Session')").closest('div.results_list > div').show();
+    }
+    if ($(this).attr("title") == ("tab6")) {
+        hideAllSessions();
+        $("#containerContent").css("padding", ".25em");
+        $(".favorite").closest('div.results_list > div').show();
     }
 });
 $('div[id^="tab"] a').click(function(e) {
