@@ -9,7 +9,7 @@ function hideAllSessions() {
 };
 
 $(document).ready(function() {
-    if ($(".gallery_col").length != 0) {
+    if ($(".gallery_col").length == 0) {
         $("#no_results").show();
     };
 
