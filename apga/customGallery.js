@@ -8,13 +8,6 @@ function hideAllSessions() {
     $("#containerContent").show();
 };
 
-// if (window.location.toString().includes("dayId=6")) {
-//     $("#tabs li:nth-child(2)").attr("id", "current");
-//     $('#tab2').fadeIn();
-// } else {
-//     $("#tabs li:first").attr("id", "current"); // Activate first tab
-// }
-
 
 if (window.location.toString().includes("roundId=2&")) {
     $("#newNav").hide();
@@ -23,7 +16,7 @@ if (window.location.toString().includes("roundId=2&")) {
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
-$('#tabs a').click(function(e) {
+$('#tabs #newNav a').click(function(e) {
     e.preventDefault();
     showAllSessions();
     $("#containerContent div").hide(); //Hide all content
