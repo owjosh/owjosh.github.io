@@ -76,6 +76,7 @@ ul.scheduleDayList,
 #improved>li.filterByScheduleRoom,
 #improved>li.filterByScheduleDay,
 #improved>li.filterByScheduleTimeSlot,
-#content>div.sidebar_right>div.info-block.box-green.front {
+#content>div.sidebar_right>div.info-block.box-green.front,
+#no_results {
     display: none!important;
 }
