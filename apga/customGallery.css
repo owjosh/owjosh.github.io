@@ -17,12 +17,12 @@ ul.scheduleDayList {
 
 #tabs a {
     position: relative;
-    background: #ddd;
-    background-image: #ddd;
+    background: #004685;
+    background-image: #004685;
     padding: .7em .5em;
     float: left;
     text-decoration: none;
-    color: #004685;
+    color: #fff;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
     border-radius: 5px 5px 0 0;
     border: 1px #F5F5F5 solid;
