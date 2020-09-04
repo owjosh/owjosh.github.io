@@ -34,6 +34,7 @@ ul.scheduleDayList {
 #tabs a:focus,
 #tabs a:focus::after {
     background: #fff;
+    color: #004685;
 }
 
 #tabs a:focus {
