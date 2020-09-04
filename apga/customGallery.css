@@ -67,6 +67,12 @@ ul.scheduleDayList {
     box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
 }
 
-#content>div.main_content>div.paging.clearfix {
+#content>div.main_content>div.paging.clearfix,
+#content>div.sidebar_right>div:nth-child(1),
+#improved>li.application_category_filter,
+#improved>li.filterByScheduleRoom,
+#improved>li.filterByScheduleDay,
+#improved>li.filterByScheduleTimeSlot,
+#content>div.sidebar_right>div.info-block.box-green.front {
     display: none!important;
 }
