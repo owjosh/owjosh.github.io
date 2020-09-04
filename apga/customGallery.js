@@ -14,6 +14,10 @@ if (window.location.toString().includes("roundId=2&")) {
     $("#gallery_back").show();
 }
 
+if (!$(".gallery_col .clearfix")) {
+    console.log("no results");
+}
+
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
 $('#tabs a').click(function(e) {
