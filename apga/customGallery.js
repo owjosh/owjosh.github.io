@@ -11,6 +11,8 @@ function hideAllSessions() {
 $(document).ready(function() {
     if ($(".gallery_col").length == 0) {
         $("#no_results").show();
+    } else {
+        $("#no_results").hide();
     };
 
     if (window.location.toString().includes("roundId=2&")) {
