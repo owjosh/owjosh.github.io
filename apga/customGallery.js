@@ -14,7 +14,7 @@ if (window.location.toString().includes("roundId=2&")) {
     $("#gallery_back").show();
 }
 
-if (!$(".gallery_col .clearfix")) {
+if ($(".gallery_col .clearfix").length) {
     console.log("no results");
 }
 
