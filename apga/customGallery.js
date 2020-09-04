@@ -14,8 +14,8 @@ if (window.location.toString().includes("roundId=2&")) {
     $("#gallery_back").show();
 }
 
-if ($(".gallery_col").length === 0) {
-    $("#no_results").attr("style", "display: inline !important");
+if ($(".gallery_col").length == 0) {
+    $("#no_results").show();
 };
 
 $("#containerContent div").hide(); // Initially hide all content
