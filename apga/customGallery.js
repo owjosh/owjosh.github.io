@@ -8,8 +8,9 @@ function hideAllSessions() {
     $("#containerContent").show();
 };
 
-$("#no_results").hide();
+
 $(document).ready(function() {
+    $("#no_results").hide();
     if ($(".gallery_col").length == 0) {
         $("#no_results").show();
     }
