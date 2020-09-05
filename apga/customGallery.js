@@ -8,17 +8,13 @@ function hideAllSessions() {
     $("#containerContent").show();
 };
 
-
-$(document).ready(function() {
-    $("#no_results").hide();
-    if ($(".gallery_col").length == 0) {
-        $("#no_results").show();
-    }
+$(function() {
     if (window.location.toString().includes("roundId=2&")) {
         $("#tabs, #containerContent, div.applicationGallery_info > p:nth-child(4), div.applicationGallery_info > hr").hide();
         $("#gallery_back").show();
     }
 });
+
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
