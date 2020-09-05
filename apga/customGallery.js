@@ -23,7 +23,6 @@ $(function() {
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
-$("#no_results").hide();
 $('#tabs a').click(function(e) {
     e.preventDefault();
     showAllSessions();
