@@ -18,6 +18,8 @@ $(function() {
 $(function() {
     if ($(".gallery_col").length == 0) {
         $("#no_results").show();
+    } else {
+        $("#no_results").hide();
     }
 });
 
