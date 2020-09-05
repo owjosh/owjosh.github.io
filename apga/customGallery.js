@@ -15,6 +15,11 @@ $(function() {
     }
 });
 
+$(function() {
+    if ($("#no_results") == 0) {
+        $("#no_results").show();
+    }
+});
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
