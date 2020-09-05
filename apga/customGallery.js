@@ -18,13 +18,12 @@ $(function() {
 $(function() {
     if ($(".gallery_col").length == 0) {
         $("#no_results").show();
-    } else {
-        $("#no_results").hide();
     }
 });
 
 $("#containerContent div").hide(); // Initially hide all content
 $("#containerContent div:first").fadeIn(); // Show first tab content
+$("#no_results").hide();
 $('#tabs a').click(function(e) {
     e.preventDefault();
     showAllSessions();
