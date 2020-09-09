@@ -10,9 +10,9 @@ $(function() {
         console.log(textStatus); //success
         console.log(jqxhr.status); //200
         console.log('Load was performed.');
-    });
-    $(".read-only input[type='text'], .read-only textarea, .read-only select").waitUntilExists(function() {
-        this.readOnly = true;
-        this.tabIndex = -1;
+        $(".read-only input[type='text'], .read-only textarea, .read-only select").waitUntilExists(function() {
+            this.readOnly = true;
+            this.tabIndex = -1;
+        });
     });
 });
