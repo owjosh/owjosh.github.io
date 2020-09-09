@@ -6,12 +6,10 @@ $(function() {
         $('.read-only select').waitUntilExists(function() {
             $('.read-only select').attr("disabled", true);
             this.tabIndex = -1;
-            console.log('select readonly');
         })
         $(".read-only input[type='text'], .read-only textarea").waitUntilExists(function() {
             this.readOnly = true;
             this.tabIndex = -1;
-            console.log('basic readonly');
         })
     });
 });
