@@ -6,8 +6,9 @@ var waitForElement = document.createElement('script');
 waitForElement.rel = 'stylesheet';
 waitForElement.type = 'text/css';
 waitForElement.src = 'https://openwater-themes.s3.amazonaws.com/js/waitForElement.js';
+document.getElementsByTagName('HEAD')[0].appendChild(readOnlyCss)
+document.getElementsByTagName('HEAD')[0].appendChild(waitForElement);
 
-document.getElementsByTagName('HEAD')[0].appendChild(readOnlyCss).appendChild(waitForElement);
 $(function() {
     $(".read-only input[type='text'], .read-only textarea, .read-only select").waitUntilExists(function() {
         this.readOnly = true;
