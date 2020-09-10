@@ -1,7 +1,5 @@
-.read-only input[type="text"] {
-    background-color: #e6e6e6 !important;
-}
-
+.read-only input[type="text"],
+.read-only textarea,
 .read-only select {
     background-color: #e6e6e6 !important;
 }
