@@ -2,7 +2,7 @@
 $(function() {
     $.getScript("https://openwater-themes.s3.amazonaws.com/js/waitForElement.js", function() {
         $('.login_box').waitUntilExists(function() {
-            $(".submit").text("Login as Non-Member");
+            $(".fr").text("Login as Non-Member");
         });
     });
 });
